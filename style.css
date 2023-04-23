@@ -1,0 +1,178 @@
+body {
+  background-color: #f8f9fa;
+}
+
+a:hover {
+  color: burlywood;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(82, 82, 92);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-style: italic;
+  padding: 30px;
+  margin: 20px;
+  line-height: 2;
+  text-align: justify;
+}
+
+footer {
+  padding-bottom: 10px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+/*styling of the Navigation-bar   */
+a {
+  color: black;
+}
+
+nav .navbar-nav li a:hover {
+  color: burlywood;
+}
+
+.logo {
+  padding-right: 25px;
+}
+
+/*First page */
+
+.background-image {
+  background-image: url("./bcn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+h1 {
+  text-align: right;
+  background-color: black;
+  opacity: 0.6;
+  color: #f8f9fa;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Second page */
+
+h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+/*image grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*image grid - 4 columns*/
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 5px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*Third page */
+
+.thirdpageimages {
+  padding: 40px;
+  opacity: 0.9;
+}
+
+/*Fourth page */
+
+h3 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+
+.form {
+  text-align: left;
+  margin: 20px;
+  padding-top: 60px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.info-links {
+  padding-top: 100px;
+  text-align: left;
+}
+
+.lastpagefooter {
+  padding-top: 100px;
+}
+
+/* navbar responsive */
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* second page responsive page style: */
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    height: auto;
+  }
+  .row {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    padding: 25px;
+  }
+}
+
+/* fourth page responsive page style: */
+
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 10px;
+    margin: 10px;
+  }
+}
